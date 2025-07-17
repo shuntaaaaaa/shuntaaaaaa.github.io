@@ -41,17 +41,48 @@
 そして、自然の中をドライブする時間は、リセットできる大切な時間。海や山、星空を見に行くドライブは、仲間との絆も深まる最高の時間です。
 
 このWebサイトでは、そんな自分の一面や経験を発信しています。ぜひ、他のページも覗いてみてください！</p>
-    <img src="S__243179536.jpg" alt="自分の写真や趣味の写真" width="300">
+
+    <img src="S__243179536.jpg" alt="自分の写真や趣味の写真" width="300" style="margin-top: 10px; border-radius: 10px;">
+
+    <hr>
+
+    <h3>プロフィール入力フォーム</h3>
+    <form>
+      <label for="username">名前：</label>
+      <input type="text" id="username" name="username"><br><br>
+
+      <label for="birthday">誕生日：</label>
+      <input type="date" id="birthday" name="birthday"><br><br>
+
+      <label>性別：</label>
+      <input type="radio" name="gender" value="男性" id="male"><label for="male">男性</label>
+      <input type="radio" name="gender" value="女性" id="female"><label for="female">女性</label>
+      <input type="radio" name="gender" value="その他" id="other"><label for="other">その他</label><br><br>
+
+      <label for="color">好きな色：</label>
+      <select name="color" id="color">
+        <option value="red">赤</option>
+        <option value="blue">青</option>
+        <option value="green">緑</option>
+        <option value="yellow">黄</option>
+        <option value="other">その他</option>
+      </select><br><br>
+
+      <button type="submit">送信</button>
+      <button type="reset">クリア</button>
+    </form>
   </main>
 
   <!-- Right Sidebar -->
   <aside style="float:right; width:20%;">
     <h3>Contact Me</h3>
     <form>
-      名前: <input type="text" name="name"><br>
-      メール: <input type="email" name="email"><br>
-      メッセージ: <br>
-      <textarea name="message" rows="4" cols="20"></textarea><br>
+      <label for="name">名前:</label>
+      <input type="text" name="name" id="name"><br>
+      <label for="email">メール:</label>
+      <input type="email" name="email" id="email"><br>
+      <label for="message">メッセージ:</label><br>
+      <textarea name="message" id="message" rows="4" cols="20"></textarea><br>
       <button type="submit">送信</button>
       <button type="reset">クリア</button>
     </form>
